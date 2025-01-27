@@ -20,6 +20,7 @@ def port_scan(host, startPort, endPort):
     total_time = end_time - start_time
     print(f"Scanning completed in: {total_time}")
 
+#A function to check if the port is running via tcp/udp and if so print the name of the service that is running on that port.
 def printSerivceName(port):
     try:
         print(socket.getservbyport(port, 'tcp'))
